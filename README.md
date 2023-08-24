@@ -9,5 +9,5 @@ Arquivos das Atividades na Pasta: **Atividades**
 
 Primeira atividade:<br/>
 Explorar a unity: hierarquia,cena,layout e modificar elementos na cena.
-<img src ="./Modulo1/files/atividade1.gif" alt="Atividade1Gif"/>
+<img src ="./Atividades\Modulo1\atividade1gif.gif" alt="Atividade1Gif"/>
 
