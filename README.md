@@ -21,6 +21,6 @@ Criar uma cena GreyBox.
 ## Módulo3
 
 Terceira atividade:</br>
-Criar um script que recebe um valor monetário e calcula quantas cédulas serâo devolvidas, priorizando sempre o maior valor da cédula.
+Criar um script que recebe um valor monetário e calcula quantas cédulas serão devolvidas, priorizando sempre o maior valor da cédula.
 <img src="./Atividades/Modulo3/calcularCedulas.png">
 <img src="./Atividades/Modulo3/codigo.png"/>
