@@ -30,3 +30,4 @@ Criar um script que recebe um valor monetário e calcula quantas cédulas serão
 Quarta atividade:<br/>
 Criar UI com um toggle alternadno entre fullscreen e window mode, dropdown com diferntes resoluções e um botão para sair da aplicação.
 
+<img src="./Atividades/Modulo4/fullscreen.gif">
