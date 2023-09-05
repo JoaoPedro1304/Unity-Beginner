@@ -31,3 +31,13 @@ Quarta atividade:<br/>
 Criar UI com um toggle alternadno entre fullscreen e window mode, dropdown com diferntes resoluções e um botão para sair da aplicação.
 
 <img src="./Atividades/Modulo4/fullscreen.gif">
+
+## Módulo5
+
+Quinta Atividade:<br/>
+Criar um jogo de puzzle de perguntas e respostas com diferentes níveis de dificuldade, pontuação, pontuação record e um botão de ajuda "pull up".
+
+
+<a href="./Assets/Modulo5/">Assets do projeto</a>
+
+<img src="./Atividades/Modulo5/puzzlegame.gif">
