@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
        movePosition = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
 
         
-        transform.position += movePosition * speed * Time.deltaTime;
+            transform.position += movePosition * speed * Time.deltaTime;
         
 
         

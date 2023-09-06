@@ -41,3 +41,12 @@ Criar um jogo de puzzle de perguntas e respostas com diferentes níveis de dific
 <a href="./Assets/Modulo5/">Assets do projeto</a>
 
 <img src="./Atividades/Modulo5/puzzlegame.gif">
+
+## Módulo6 
+
+Sexta Atividade:
+Criar transição de cenas, conforme o personagem avança, novas cenas são carregadas.
+
+<a href="./Assets/Modulo6/">Assets do projeto </a>
+
+<img src="./Atividades/Modulo6/SceneManager.gif">
