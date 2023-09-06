@@ -44,7 +44,7 @@ Criar um jogo de puzzle de perguntas e respostas com diferentes níveis de dific
 
 ## Módulo6 
 
-Sexta Atividade:
+Sexta Atividade:<br/>
 Criar transição de cenas, conforme o personagem avança, novas cenas são carregadas.
 
 <a href="./Assets/Modulo6/">Assets do projeto </a>
