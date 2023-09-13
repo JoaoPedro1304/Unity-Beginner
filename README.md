@@ -50,3 +50,13 @@ Criar transição de cenas, conforme o personagem avança, novas cenas são carr
 <a href="./Assets/Modulo6/">Assets do projeto </a>
 
 <img src="./Atividades/Modulo6/SceneManager.gif">
+
+## Módulo 7
+
+Sétima Atividade:</br>
+
+Desenvolver um jogo utilizando efeitos de física em que o personagem desvia de obstaculos.
+
+<a href="./Assets/Modulo 7/">Assets do projeto</a>
+
+<img src="./Atividades/Modulo7/Modulo7Gif.gif">
