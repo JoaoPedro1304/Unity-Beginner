@@ -55,7 +55,7 @@ Criar transição de cenas, conforme o personagem avança, novas cenas são carr
 
 Sétima Atividade:</br>
 
-Desenvolver um jogo utilizando efeitos de física em que o personagem desvia de obstaculos.
+Desenvolver um jogo utilizando efeitos de física em que o personagem se mantem no ar conforme os clicks do mouse.
 
 <a href="./Assets/Modulo 7/">Assets do projeto</a>
 
