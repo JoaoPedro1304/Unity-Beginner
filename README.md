@@ -55,7 +55,8 @@ Criar transição de cenas, conforme o personagem avança, novas cenas são carr
 
 Sétima Atividade:</br>
 
-Desenvolver um jogo utilizando efeitos de física em que o personagem se mantem no ar conforme os clicks do mouse.
+Desenvolver um jogo utilizando efeitos de física em que o personagem se mantem no ar conforme os clicks do mouse.<br/>
+Extras: obstaculos, caso personagem colida com eles o jogo reinicia, e capsulas que deixam o persongem ivuneravel aos obstaculos.
 
 <a href="./Assets/Modulo 7/">Assets do projeto</a>
 

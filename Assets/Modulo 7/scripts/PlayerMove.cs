@@ -6,8 +6,8 @@ public class PlayerMove : MonoBehaviour
     float speed = 0.3f;
 
     void Start(){
-
-        rb = GetComponent<Rigidbody>();        
+                
+        rb = GetComponent<Rigidbody>();     
     }
     void Update(){
         
