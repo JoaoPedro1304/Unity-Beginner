@@ -63,3 +63,11 @@ Importar Assets externos e testar materiais.
 <a href="./Assets/Modulo8">Assets do projeto</a>
 
 <img src="./Atividades/Modulo8/Modulo8Gif.gif">
+
+## Módulo 9
+
+Executar animação de combo a cada clique, caso o tempo de clique seja superior ao tempo de combo, a animação reseta.
+
+<a href="./Assets/Modulo9/">Assets do projeto</a>
+
+<img src="./Atividades/Modulo9/Modulo9Gif.gif">
