@@ -66,7 +66,7 @@ Importar Assets externos e testar materiais.
 
 ## Módulo 9
 
-Executar animação de combo a cada clique, caso o tempo de clique seja superior ao tempo de combo, a animação reseta.
+Executar animação de combo a cada clique, caso o tempo de clique seja superior ao tempo de combo, a animação reinicia.
 
 <a href="./Assets/Modulo9/">Assets do projeto</a>
 

@@ -12,7 +12,7 @@ public class SimpleAnimator : MonoBehaviour
     public AudioSource walkSound;    
     int count=0;
     float comboTime =1.5f;
-    float clickTime = 0;        
+    float clickTime = 0;      
     
     void Update()
     {        
@@ -20,9 +20,7 @@ public class SimpleAnimator : MonoBehaviour
         
         if((Time.time - clickTime)>comboTime){
             count=0;       
-            animator.SetBool("attack",false);
-            animator.SetBool("attack1",false);
-            animator.SetBool("attack2",false);
+            
         }
         
                
@@ -30,18 +28,20 @@ public class SimpleAnimator : MonoBehaviour
 
     public void Attack(){
 
-        clickTime = Time.time;           
+        clickTime = Time.time; 
         count++;
-        if(count == 1){
-            animator.SetBool("attack", true);
-        }else if( count == 2){
-            animator.SetBool("attack",false);
-            animator.SetBool("attack1", true);
-        }else if( count == 3){
-            animator.SetBool("attack",false);
-            animator.SetBool("attack2", true);
-        }
         
+        if(count == 1){
+            animator.SetTrigger("attack");
+            
+        }else if( count == 2){
+            
+            animator.SetTrigger("attack1");
+        }else if( count == 3){
+           
+            animator.SetTrigger("attack2");
+        }
+        Debug.Log(""+count);
         if(count >=3){
             count =0;
         }
@@ -53,6 +53,7 @@ public class SimpleAnimator : MonoBehaviour
     {
        
     }
+
     public void PlayWalkSound(AudioClip clip){
         walkSound.clip = clip;
         walkSound.Play();
