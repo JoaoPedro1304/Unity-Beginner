@@ -71,3 +71,11 @@ Executar animação de combo a cada clique, caso o tempo de clique seja superior
 <a href="./Assets/Modulo9/">Assets do projeto</a>
 
 <img src="./Atividades/Modulo9/Modulo9Gif.gif">
+
+## Módulo 10
+
+Animar palavra informada pelo input utilizando TextMeshPro.
+
+<a href = "./Assets/Modulo10">Assets do projeto</a>
+
+<img src="./Atividades/Modulo10/Modulo10Gif.gif">
