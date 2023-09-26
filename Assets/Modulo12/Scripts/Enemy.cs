@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField]TMP_Text lifeText;
     GameObject player; 
     int life;
+    Vector3 randomPosition;
 
     void Awake(){
         life = 100;
@@ -29,7 +30,8 @@ void Update(){
 public void SufferDamage(int damage)
 {
     life -= damage;
-    lifeText.text = life.ToString();
-    
+    lifeText.text = life.ToString();    
 }
+
+
 }
