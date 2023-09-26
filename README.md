@@ -79,3 +79,8 @@ Animar palavra informada pelo input utilizando TextMeshPro.
 <a href = "./Assets/Modulo10">Assets do projeto</a>
 
 <img src="./Atividades/Modulo10/Modulo10Gif.gif">
+
+## Módulo 11
+
+Voltar a atividade do módulo 5 e adicionar efeitos sonoros(música, audio para respostas certas e erradas etc), criar um menu<br/>
+para alterar volume da música e dos efeitos sonoros separadamente e voltar ao estado atual do jogo após fechar o menu.
