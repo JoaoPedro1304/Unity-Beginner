@@ -15,4 +15,4 @@ MonoBehaviour:
   projectileType: 0
   projectSpeed: 15
   fireRate: 0.5
-  damage: 5
+  damage: 15

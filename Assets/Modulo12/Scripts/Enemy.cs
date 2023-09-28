@@ -7,31 +7,51 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [SerializeField]TMP_Text lifeText;
-    GameObject player; 
-    int life;
-    Vector3 randomPosition;
+    [SerializeField]TMP_Text enemyName;    
+    [SerializeField] List<EnemyType> enemyType;
+    [SerializeField] ParticleSystem deathParticle;
+    [SerializeField] GameObject enemyProjectile;
+    GameObject player;    
+    public int life;
+    float speed;
+    int random;
+    
 
-    void Awake(){
-        life = 100;
+    void Start()
+    {
+        random = Random.Range(0,2);
+
+        speed = enemyType[random].enemyEspeed;
+
+        life = enemyType[random].enemyLife;
+
         lifeText.text = life.ToString();
+
+        enemyName.text = enemyType[random].enemyName;
     }
-void Update(){
+    
+    void Update(){
+        
+        player = GameObject.Find("Player");
+    
+        transform.LookAt(player.transform);        
 
-    player = GameObject.Find("Player");
-
-    transform.LookAt(player.transform);
-    transform.position = transform.position + transform.forward * 2 * Time.deltaTime; 
-       
-    if(life <= 0){
-        Destroy(gameObject);
+        //transform.position = transform.position + transform.forward * speed * Time.deltaTime; 
+           
+        if(life <= 0){
+            Instantiate(deathParticle,transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
-}
-
-public void SufferDamage(int damage)
-{
-    life -= damage;
-    lifeText.text = life.ToString();    
-}
-
+    void Shoot()
+    {
+        Instantiate(enemyProjectile, transform.forward, transform.rotation);
+    }
+    public void SufferDamage(int damage)
+    {
+        life -= damage;
+        lifeText.text = life.ToString();        
+    }
+    
 
 }

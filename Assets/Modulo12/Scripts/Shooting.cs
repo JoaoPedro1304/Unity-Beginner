@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    public AudioSource shootAudio;
     public List<Weapon> weaponList = new List<Weapon>();
     public GameObject projectilePrefab;    
     Weapon equipedWeapon;
@@ -42,10 +43,12 @@ public class Shooting : MonoBehaviour
                                 
                 GameObject projectile = Instantiate(projectilePrefab, transform.position , transform.rotation);
                 InitializeProjectile(projectile);
+                shootAudio.Play();
 
             }
             if(equipedWeapon.projectileType == ProjectileType.HitScan)
             {
+                shootAudio.Play();
                 GameObject projectile = Instantiate(projectilePrefab, transform.position , transform.rotation);
                 InitializeProjectile(projectile);
 

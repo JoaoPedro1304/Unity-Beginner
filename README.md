@@ -84,3 +84,10 @@ Animar palavra informada pelo input utilizando TextMeshPro.
 
 Voltar a atividade do módulo 5 e adicionar efeitos sonoros(música, audio para respostas certas e erradas etc), criar um menu<br/>
 para alterar volume da música e dos efeitos sonoros separadamente e voltar ao estado atual do jogo após fechar o menu.
+
+## Módulo 12
+
+Criar um jogo em que os inimigos sigam e ataquem o jogador, adicionar efeitos sonoros, efeitos visuais para deixar o jogo mais atraente.
+
+<a href="">Assets do Projeto</a>
+<img src="">

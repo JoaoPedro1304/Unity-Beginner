@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
@@ -12,8 +13,8 @@ public class Move : MonoBehaviour
     [Header("Camera")]
     [SerializeField] Transform cam;
     [SerializeField] float limitDistanceX, limitDistanceZ, minDistanceZ;     
-      
     
+       
     void Start()
     {
         
@@ -74,7 +75,7 @@ public class Move : MonoBehaviour
 
         Ray ray =  Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if(Physics.Raycast(ray, out RaycastHit hit))
+        if(Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity,1 << 6))
         {
             mouse.z = hit.distance;                   
         }

@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9df9edf2c2aaf7d4f8b1961043d6400f, type: 3}
-  m_Name: Weapon 3
+  m_Script: {fileID: 11500000, guid: e47aae7428bf77c4a9064bb8a2761121, type: 3}
+  m_Name: enemy 1
   m_EditorClassIdentifier: 
-  projectileType: 1
-  projectSpeed: 200
-  fireRate: 0.09
-  damage: 5
+  enemyLife: 50
+  enemyEspeed: 1.5
+  enemyName: enemy 1
