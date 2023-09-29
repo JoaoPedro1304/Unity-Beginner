@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
@@ -7,15 +8,15 @@ public class SpawnEnemy : MonoBehaviour
 
    Vector3 randomPosition;
    public GameObject enemy;
-   float timeToSpawn;   
-       
+   float timeToSpawn;
+
     void Update()
     {
         
 
         timeToSpawn += Time.deltaTime;
 
-        if(TimeManager.gameTime < 50)
+        if(TimeManager.gameTime < 15)
         {            
             if(timeToSpawn > Random.Range(5,10))
             {
@@ -23,18 +24,18 @@ public class SpawnEnemy : MonoBehaviour
                 timeToSpawn =0;
             }
         }
-        if(TimeManager.gameTime > 50 && TimeManager.gameTime < 80){
+        if(TimeManager.gameTime > 15 && TimeManager.gameTime < 30){
             if(timeToSpawn > Random.Range(5,10))
             {
                 spawnEnemy(enemy);
                 timeToSpawn =0;
             }
         }
-        if(TimeManager.gameTime > 80){
+        if(TimeManager.gameTime > 45){
             if(timeToSpawn > Random.Range(1,5))
             {
                 spawnEnemy(enemy);
-                timeToSpawn =0;
+                timeToSpawn = 0;
             }
         }
         

@@ -17,12 +17,14 @@ public class Move : MonoBehaviour
        
     void Start()
     {
-        
+        cam = GameObject.Find("Main Camera").transform; 
+        cam.transform.position = new Vector3(0.7f, 7.8f, -15.1f);
     }
 
     
     void Update()
-    {        
+    {       
+        //cam = GameObject.Find("Main Camera").transform; 
         
         if(Input.GetKey("w"))
         {

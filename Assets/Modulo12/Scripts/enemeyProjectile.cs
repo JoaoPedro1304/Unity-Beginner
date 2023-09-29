@@ -2,26 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemeyProjectile : MonoBehaviour
+public class EnemeyProjectile : MonoBehaviour
 {
-    public int damage;
+    int damage;
+    
     void Start()
     {
-        damage = 2;
+        damage = 5;
+        
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
 
-        transform.position = transform.position + transform.forward * 2 * Time.deltaTime;
+        transform.position = transform.position + transform.forward * 20 * Time.deltaTime;
 
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "player")
+        if(collision.gameObject.tag == "Player")
         {
+            Debug.Log("Player hited");
             collision.gameObject.GetComponent<Player>().SufferDamage(damage);
+            Destroy(gameObject);
         }
     }
 }

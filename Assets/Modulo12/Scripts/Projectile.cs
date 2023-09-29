@@ -8,12 +8,15 @@ public class Projectile : MonoBehaviour
     float timeToDestroy;
     public float speed;
     public int damage;
+    public static int points;
     [SerializeField] ParticleSystem hitParticle;
-    
-    private void Update()
+    void Start()
     {
-        hitParticle.transform.position = transform.position *  Time.deltaTime;
-        
+        points = 0;
+    }
+    void Update()
+    {
+          
         time += Time.deltaTime;
 
         transform.position += transform.forward * speed * Time.deltaTime;
@@ -35,6 +38,7 @@ public class Projectile : MonoBehaviour
         {
             Instantiate(hitParticle,transform.position,Quaternion.identity);
             Destroy(gameObject); 
+            points +=2;
         }
     }
 
@@ -43,9 +47,11 @@ public class Projectile : MonoBehaviour
         {
             collision.transform.GetComponent<Enemy>().SufferDamage(damage);
             Instantiate(hitParticle,transform.position,Quaternion.identity);
-            Destroy(gameObject); 
-        }                    
-       
+            Destroy(gameObject);
+            points +=2; 
+        }
+               
     }  
+   
     
 }
