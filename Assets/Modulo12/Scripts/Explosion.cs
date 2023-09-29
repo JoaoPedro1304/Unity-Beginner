@@ -16,7 +16,11 @@ public class Explosion : MonoBehaviour
     
     void Update()
     {
-      
+      if(life <= 0)
+      {
+        Instantiate(explosionParticle, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+      }
     }
 
     void OnCollisionEnter(Collision collision)
