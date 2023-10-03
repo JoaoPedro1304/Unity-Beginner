@@ -90,4 +90,5 @@ para alterar volume da música e dos efeitos sonoros separadamente e voltar ao e
 Criar um jogo em que os inimigos sigam e ataquem o jogador, adicionar efeitos sonoros, efeitos visuais para deixar o jogo mais atraente.
 
 <a href="./Assets/Modulo12/">Assets do Projeto</a>
-<img src="./Atividades/Modulo12/Modulo12Gif.gif"> <img src="./Atividades/Modulo12/Modulo12_Explosion_Gif.gif">
+<img src="./Atividades/Modulo12/Modulo12Gif.gif">
+<img src="./Atividades/Modulo12/Modulo12_Explosion_Gif.gif">
