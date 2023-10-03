@@ -1,26 +1,40 @@
+
 using TMPro;
+
 using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
     [SerializeField] TMP_Text lifeText;
-    [SerializeField] ParticleSystem explosionParticle;
-    int life = 75;
+    [SerializeField] ParticleSystem explosionParticle;    
+    [SerializeField] AudioSource explosionSound;
+
+    float time=0;
+    int life = 45;
     int damage = 0;
-    int explosionDamage;    
+    int explosionDamage =51;    
     void Start()
     {
         lifeText.text = life.ToString();
-        explosionDamage = 51;
+        
     }
     
     void Update()
     {
-      if(life <= 0)
-      {
-        Instantiate(explosionParticle, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-      }
+        if(life <= 0)
+        {
+            time += Time.deltaTime;
+
+            Instantiate(explosionParticle, transform.position, Quaternion.identity);            
+            Destroy(GameObject.Find($"{gameObject.name}/barril"));
+            explosionSound.Play();
+            life = 1;
+            if(time > 3)
+            {
+                Destroy(gameObject);
+            }
+
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -29,7 +43,7 @@ public class Explosion : MonoBehaviour
         {
             damage = collision.gameObject.GetComponent<Projectile>().damage;
             life -= damage;
-            lifeText.text = life.ToString();
+            lifeText.text = life.ToString();            
         }
        
     }
@@ -39,21 +53,21 @@ public class Explosion : MonoBehaviour
         {
             damage = collider.gameObject.GetComponent<Projectile>().damage;
             life -= damage;
-            lifeText.text = life.ToString();
+            lifeText.text = life.ToString();            
         }        
     }
+   
     void OnTriggerStay(Collider collider)
     {
-        if(collider.gameObject.tag == "enemy")
+        if(collider.gameObject.tag == "enemy" && life <= 1)
         {
-            Debug.Log("Inside the explosion area");
-            if(life <= 0)
-            {
-                Debug.Log("Explode");
-                collider.gameObject.GetComponent<Enemy>().SufferDamage(explosionDamage);
-                Instantiate(explosionParticle, transform.position, Quaternion.identity);
-                Destroy(gameObject);
-            }
+            //Debug.Log("Inside the explosion area");
+            
+            Debug.Log("Explode");
+            collider.gameObject.GetComponent<Enemy>().SufferDamage(explosionDamage);               
+            
         }
     }
+
+ 
 }

@@ -94,8 +94,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -465,8 +465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeText: {fileID: 7700851281540121181}
-  enemyName: {fileID: 7700851282857535729}
-  canvas: {fileID: 7700851282402157014}
   enemyType:
   - {fileID: 11400000, guid: a5b69704c0605854faa08af4e7fb4202, type: 2}
   - {fileID: 11400000, guid: 3bee11c4b1ecacf448478bd510e23d73, type: 2}

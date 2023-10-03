@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
@@ -18,7 +17,7 @@ public class Move : MonoBehaviour
     void Start()
     {
         cam = GameObject.Find("Main Camera").transform; 
-        cam.transform.position = new Vector3(0.7f, 7.8f, -15.1f);
+        
     }
 
     

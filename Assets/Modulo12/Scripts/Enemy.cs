@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField]TMP_Text lifeText;
-    [SerializeField]TMP_Text enemyName;    
+    [SerializeField]TMP_Text lifeText;        
     [SerializeField] List<EnemyType> enemyType;
     [SerializeField] ParticleSystem deathParticle;
     [SerializeField] GameObject enemyProjectile;
@@ -16,7 +15,7 @@ public class Enemy : MonoBehaviour
     public int life;
     float time;
     float speed;
-    int random;
+    int random ;
     
 
     void Start()
@@ -29,7 +28,7 @@ public class Enemy : MonoBehaviour
 
         lifeText.text = life.ToString();
 
-        enemyName.text = enemyType[random].enemyName;
+       
     }
     
     void Update(){
@@ -44,7 +43,7 @@ public class Enemy : MonoBehaviour
         }
                 
 
-        transform.position = transform.position + transform.forward * speed * Time.deltaTime; 
+        transform.position = transform.position + transform.forward * speed * Time.deltaTime;
            
         if(life <= 0){
             Instantiate(deathParticle,transform.position, Quaternion.identity);

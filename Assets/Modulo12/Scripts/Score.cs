@@ -12,6 +12,7 @@ public class Score : MonoBehaviour
     }
     void Update()
     {
+        points = Projectile.points;
         score.text = "Score: " + Projectile.points.ToString();
     }
 

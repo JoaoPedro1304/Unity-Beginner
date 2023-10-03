@@ -15,7 +15,7 @@ public class EnemeyProjectile : MonoBehaviour
     void Update()
     {
 
-        transform.position = transform.position + transform.forward * 20 * Time.deltaTime;
+        transform.position = transform.position + transform.forward * 30 * Time.deltaTime;
 
     }
     void OnCollisionEnter(Collision collision)

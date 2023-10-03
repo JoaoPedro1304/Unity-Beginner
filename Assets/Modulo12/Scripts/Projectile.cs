@@ -10,10 +10,7 @@ public class Projectile : MonoBehaviour
     public int damage;
     public static int points;
     [SerializeField] ParticleSystem hitParticle;
-    void Start()
-    {
-        points = 0;
-    }
+    
     void Update()
     {
           
@@ -39,7 +36,7 @@ public class Projectile : MonoBehaviour
             Instantiate(hitParticle,transform.position,Quaternion.identity);
             Destroy(gameObject); 
             points +=2;
-        }
+        }        
     }
 
     void OnCollisionEnter(Collision collision){
@@ -49,6 +46,11 @@ public class Projectile : MonoBehaviour
             Instantiate(hitParticle,transform.position,Quaternion.identity);
             Destroy(gameObject);
             points +=2; 
+        }
+        if(collision.gameObject.tag == "barril")
+        {            
+            Instantiate(hitParticle,transform.position,Quaternion.identity);
+            Destroy(gameObject);
         }
                
     }  

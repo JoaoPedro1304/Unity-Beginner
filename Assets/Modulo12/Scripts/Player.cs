@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -17,16 +15,16 @@ public class Player : MonoBehaviour
     void Update()
     {   
         if(life >=100)
-        {
+       {
             life =100;
-        }
+       }
        if(life <=0)
        {
-        isDead = true;
-        Destroy(gameObject);
+            isDead = true;
+            Destroy(gameObject);
        }else
        {
-        isDead = false;
+            isDead = false;
        }
 
     }
@@ -44,6 +42,5 @@ public class Player : MonoBehaviour
         }else{
             life += reciveLife;
         }
-
-    }
+    }   
 }
