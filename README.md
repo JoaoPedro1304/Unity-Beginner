@@ -87,10 +87,19 @@ para alterar volume da música e dos efeitos sonoros separadamente e voltar ao e
 
 ## Módulo 12
 
-Criar um jogo em que os inimigos sigam e ataquem o jogador, adicionar efeitos sonoros, efeitos visuais para deixar o jogo mais atraente.
+Criar um jogo de plataforma em que os inimigos sigam e ataquem o jogador, adicionar efeitos sonoros, efeitos visuais para deixar o jogo mais atraente.
 
 <a href="./Assets/Modulo12/">Assets do Projeto</a>
 
 <img src="./Atividades/Modulo12/Modulo12Gif.gif">
 
 <img src="./Atividades/Modulo12/Modulo12_Explosion_Gif.gif">
+
+## Módulo 13
+
+Criar um jogo para mobile em que o jogador deve cortar os objetos enquanto esles caem, adicionar audios de efeitos sonoros e musica, menu de configurações para regular volume dos efeitos sonoros e musica.
+
+*Build(executavel do jogo) disponivel em <a href="./Assets/Modulo13/build android teste.apk">Aqui!</a>
+
+
+
